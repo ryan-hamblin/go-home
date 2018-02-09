@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { Game } from './containers';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducer from './reducers';
 
 ReactDOM.render(
   <Provider>
-    <App
+    <Game
       store={createStore(
         reducer,
         window.__REDUX_DEVTOOLS_EXTENSION__ &&
